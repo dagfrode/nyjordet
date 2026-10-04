@@ -1,0 +1,4431 @@
+{
+ "meta": {
+  "kilde": "Sporet for hånd fra oversiktsskiltet ved rundkjøringen",
+  "utkast": true,
+  "bredde": 1256,
+  "hoyde": 603,
+  "merknad": "Koordinater i skiltets pikselrom (vist kart). Veigeometri er hentet fra OpenStreetMap og projisert inn i skiltets koordinater via meta.georef. Hus står på adressepunktene fra Kartverket. Lengder regnes i meter via georef. hoyde er meter over havet (Kartverket DTM 1 m); profil er høyde hver ~5 m langs veien. bratt = minst 8 % stigning over 15 m. Ruter regnes fra og til meta.start.",
+  "start": "rk",
+  "kilder": [
+   "Oversiktsskiltet (topologi, grender, P)",
+   "Adresser og høyder: © Kartverket (CC BY 4.0)",
+   "Veigeometri: © OpenStreetMap-bidragsytere (ODbL)"
+  ],
+  "georef": {
+   "metode": "affin minste kvadraters tilpasning, 173 husadresser",
+   "lat0": 59.829,
+   "A": [
+    [
+     0.013224,
+     -0.424136
+    ],
+    [
+     -0.402698,
+     -0.019571
+    ],
+    [
+     605955.618777,
+     6652952.926099
+    ]
+   ],
+   "snittfeil_m": 4.2,
+   "forklaring": "[x_m, y_m] = [px, py, 1] · A; lon = x_m/(R·cos(lat0)), lat = y_m/R i radianer, R = 6371000"
+  },
+  "snu_straff_m": 50,
+  "indre_faktor": 1.5
+ },
+ "omrader": [
+  {
+   "navn": "Grend 1",
+   "polygon": [
+    [
+     5,
+     395
+    ],
+    [
+     45,
+     318
+    ],
+    [
+     318,
+     318
+    ],
+    [
+     318,
+     400
+    ],
+    [
+     405,
+     400
+    ],
+    [
+     405,
+     560
+    ],
+    [
+     290,
+     568
+    ],
+    [
+     110,
+     560
+    ],
+    [
+     5,
+     470
+    ]
+   ],
+   "etikett": [
+    180,
+    343
+   ]
+  },
+  {
+   "navn": "Grend 2",
+   "polygon": [
+    [
+     405,
+     560
+    ],
+    [
+     405,
+     330
+    ],
+    [
+     470,
+     268
+    ],
+    [
+     830,
+     180
+    ],
+    [
+     945,
+     520
+    ],
+    [
+     945,
+     592
+    ],
+    [
+     640,
+     580
+    ]
+   ],
+   "etikett": [
+    560,
+    530
+   ]
+  },
+  {
+   "navn": "Grend 3",
+   "polygon": [
+    [
+     830,
+     180
+    ],
+    [
+     1170,
+     102
+    ],
+    [
+     1205,
+     100
+    ],
+    [
+     1245,
+     140
+    ],
+    [
+     1245,
+     375
+    ],
+    [
+     1110,
+     395
+    ],
+    [
+     1000,
+     560
+    ],
+    [
+     945,
+     520
+    ]
+   ],
+   "etikett": [
+    880,
+    212
+   ]
+  }
+ ],
+ "p": [
+  {
+   "navn": "P grend 1",
+   "polygon": [
+    [
+     320,
+     318
+    ],
+    [
+     400,
+     318
+    ],
+    [
+     400,
+     398
+    ],
+    [
+     320,
+     398
+    ]
+   ]
+  },
+  {
+   "navn": "P grend 3",
+   "polygon": [
+    [
+     985,
+     176
+    ],
+    [
+     1160,
+     126
+    ],
+    [
+     1172,
+     168
+    ],
+    [
+     1000,
+     220
+    ]
+   ]
+  }
+ ],
+ "noder": [
+  {
+   "id": "rk",
+   "x": 330,
+   "y": 500,
+   "hoyde": 156.4,
+   "type": "rundkjoring"
+  },
+  {
+   "id": "o1",
+   "x": 402.8,
+   "y": 444.6,
+   "hoyde": 158.0,
+   "type": "kryss"
+  },
+  {
+   "id": "o2",
+   "x": 423.7,
+   "y": 448.8,
+   "hoyde": 158.4,
+   "type": "kryss"
+  },
+  {
+   "id": "g1j",
+   "x": 369.2,
+   "y": 425.5,
+   "hoyde": 156.3,
+   "type": "kryss",
+   "snuplass": true,
+   "merknad": "kan snu i innkjøringen til P grend 1"
+  },
+  {
+   "id": "g1v",
+   "x": 55.7,
+   "y": 410.0,
+   "hoyde": 156.0,
+   "type": "kryss"
+  },
+  {
+   "id": "g1s",
+   "x": 52.8,
+   "y": 471.9,
+   "hoyde": 156.0,
+   "type": "ende"
+  },
+  {
+   "id": "g1c",
+   "x": 143.4,
+   "y": 477.0,
+   "hoyde": 156.1,
+   "type": "kryss"
+  },
+  {
+   "id": "g1sd",
+   "x": 129.4,
+   "y": 567.7,
+   "hoyde": 156.1,
+   "type": "ende"
+  },
+  {
+   "id": "oA",
+   "x": 477.3,
+   "y": 307.0,
+   "hoyde": 161.8,
+   "type": "kryss"
+  },
+  {
+   "id": "mA",
+   "x": 523.7,
+   "y": 380.6,
+   "hoyde": 162.8,
+   "type": "kryss"
+  },
+  {
+   "id": "n56",
+   "x": 719.5,
+   "y": 229.1,
+   "hoyde": 170.1,
+   "type": "kryss"
+  },
+  {
+   "id": "p3",
+   "x": 973.4,
+   "y": 162.9,
+   "hoyde": 173.4,
+   "type": "kryss"
+  },
+  {
+   "id": "j1",
+   "x": 733,
+   "y": 320,
+   "hoyde": 173.0,
+   "type": "rundkjoring",
+   "radius": 16
+  },
+  {
+   "id": "j2",
+   "x": 749.7,
+   "y": 340.6,
+   "hoyde": 172.9,
+   "type": "kryss"
+  },
+  {
+   "id": "e1",
+   "x": 863.1,
+   "y": 406.2,
+   "hoyde": 174.9,
+   "type": "kryss"
+  },
+  {
+   "id": "lV",
+   "x": 706.5,
+   "y": 479.9,
+   "hoyde": 167.2,
+   "type": "kryss"
+  },
+  {
+   "id": "l3",
+   "x": 959.9,
+   "y": 522.3,
+   "hoyde": 169.2,
+   "type": "kryss"
+  },
+  {
+   "id": "g3c",
+   "x": 1086.0,
+   "y": 334.9,
+   "hoyde": 168.4,
+   "type": "kryss"
+  },
+  {
+   "id": "r0",
+   "x": 1170.7,
+   "y": 140.7,
+   "hoyde": 171.8,
+   "type": "parkering",
+   "merknad": "innkjøring P grend 3"
+  },
+  {
+   "id": "r1",
+   "x": 1175.8,
+   "y": 239.2,
+   "hoyde": 168.9,
+   "type": "kryss"
+  },
+  {
+   "id": "r2",
+   "x": 1161.2,
+   "y": 344.6,
+   "hoyde": 168.1,
+   "type": "kryss"
+  },
+  {
+   "id": "r3",
+   "x": 1197.5,
+   "y": 343.6,
+   "hoyde": 168.8,
+   "type": "ende"
+  },
+  {
+   "id": "gv",
+   "x": 673.0,
+   "y": 569.7,
+   "hoyde": 162.1,
+   "type": "gangvei"
+  },
+  {
+   "id": "gv0",
+   "x": 353.5,
+   "y": 540.5,
+   "hoyde": 156.6,
+   "type": "gangvei"
+  },
+  {
+   "id": "gvE",
+   "x": 905.2,
+   "y": 611.3,
+   "hoyde": 165.3,
+   "type": "gangvei"
+  }
+ ],
+ "kanter": [
+  {
+   "id": "h1",
+   "fra": "rk",
+   "til": "o1",
+   "punkter": [
+    [
+     356.9,
+     491.4
+    ],
+    [
+     380.6,
+     470.1
+    ],
+    [
+     396.4,
+     454.2
+    ]
+   ],
+   "type": "hovedaare",
+   "bredde": "bred",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.86,
+    "hoyder": [
+     156.4,
+     156.5,
+     156.6,
+     156.7,
+     156.8,
+     157.0,
+     157.2,
+     157.6,
+     158.0
+    ]
+   },
+   "lengde_m": 38.9,
+   "maks_stigning_pst": 7.0
+  },
+  {
+   "id": "h3",
+   "fra": "o1",
+   "til": "oA",
+   "punkter": [
+    [
+     405.5,
+     438.2
+    ],
+    [
+     409.0,
+     425.4
+    ],
+    [
+     417.3,
+     384.4
+    ],
+    [
+     432.1,
+     351.0
+    ],
+    [
+     458.7,
+     321.5
+    ]
+   ],
+   "type": "hovedaare",
+   "bredde": "bred",
+   "parkering": true,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.06,
+    "hoyder": [
+     158.0,
+     158.4,
+     158.6,
+     158.8,
+     159.0,
+     159.3,
+     159.6,
+     159.8,
+     159.9,
+     160.1,
+     160.4,
+     160.9,
+     161.3,
+     161.8
+    ]
+   },
+   "lengde_m": 65.7,
+   "maks_stigning_pst": 9.3
+  },
+  {
+   "id": "h4",
+   "fra": "oA",
+   "til": "n56",
+   "punkter": [
+    [
+     482.0,
+     303.4
+    ],
+    [
+     494.6,
+     296.6
+    ],
+    [
+     542.8,
+     280.4
+    ],
+    [
+     694.7,
+     240.3
+    ],
+    [
+     710.2,
+     234.1
+    ]
+   ],
+   "type": "hovedaare",
+   "bredde": "bred",
+   "parkering": true,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.11,
+    "hoyder": [
+     161.8,
+     162.3,
+     162.7,
+     163.3,
+     163.9,
+     164.3,
+     164.8,
+     165.2,
+     165.6,
+     166.0,
+     166.4,
+     166.8,
+     167.2,
+     167.6,
+     167.9,
+     168.2,
+     168.5,
+     168.9,
+     169.3,
+     169.7,
+     169.9,
+     170.1
+    ]
+   },
+   "lengde_m": 107.4,
+   "maks_stigning_pst": 10.2
+  },
+  {
+   "id": "h5",
+   "fra": "n56",
+   "til": "p3",
+   "punkter": [
+    [
+     778.1,
+     197.2
+    ],
+    [
+     813.5,
+     187.7
+    ],
+    [
+     903.4,
+     172.8
+    ],
+    [
+     937.5,
+     168.5
+    ],
+    [
+     955.3,
+     167.6
+    ]
+   ],
+   "type": "hovedaare",
+   "bredde": "bred",
+   "parkering": true,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.08,
+    "hoyder": [
+     170.1,
+     170.2,
+     170.3,
+     170.3,
+     170.4,
+     170.5,
+     170.6,
+     170.8,
+     171.0,
+     171.1,
+     171.2,
+     171.3,
+     171.5,
+     171.7,
+     171.9,
+     172.1,
+     172.4,
+     172.6,
+     172.8,
+     173.0,
+     173.2,
+     173.4,
+     173.4
+    ]
+   },
+   "lengde_m": 111.7,
+   "maks_stigning_pst": 4.5
+  },
+  {
+   "id": "h6",
+   "fra": "rk",
+   "til": "g1j",
+   "punkter": [
+    [
+     356.9,
+     491.4
+    ],
+    [
+     363.9,
+     445.5
+    ],
+    [
+     366.6,
+     432.0
+    ]
+   ],
+   "type": "hovedaare",
+   "bredde": "bred",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "til P grend 1 og grend 1",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.87,
+    "hoyder": [
+     156.4,
+     156.5,
+     156.6,
+     156.7,
+     156.6,
+     156.4,
+     156.4,
+     156.4,
+     156.3
+    ]
+   },
+   "lengde_m": 38.9,
+   "maks_stigning_pst": 1.9
+  },
+  {
+   "id": "g2",
+   "fra": "g1j",
+   "til": "g1v",
+   "punkter": [
+    [
+     353.7,
+     419.9
+    ],
+    [
+     323.0,
+     415.4
+    ],
+    [
+     284.2,
+     414.0
+    ],
+    [
+     246.3,
+     414.3
+    ],
+    [
+     204.0,
+     413.2
+    ],
+    [
+     187.0,
+     414.0
+    ],
+    [
+     176.7,
+     412.9
+    ],
+    [
+     163.2,
+     410.6
+    ],
+    [
+     126.5,
+     409.1
+    ],
+    [
+     93.1,
+     411.0
+    ],
+    [
+     75.0,
+     410.8
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": true,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.96,
+    "hoyder": [
+     156.3,
+     156.2,
+     156.2,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.2,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.0
+    ]
+   },
+   "lengde_m": 133.8,
+   "maks_stigning_pst": 1.7
+  },
+  {
+   "id": "g4",
+   "fra": "g1v",
+   "til": "g1s",
+   "punkter": [
+    [
+     53.2,
+     447.9
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.99,
+    "hoyder": [
+     156.0,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.0
+    ]
+   },
+   "lengde_m": 25.0,
+   "maks_stigning_pst": 0.9
+  },
+  {
+   "id": "g5",
+   "fra": "rk",
+   "til": "g1c",
+   "punkter": [
+    [
+     300.8,
+     494.3
+    ],
+    [
+     286.4,
+     489.8
+    ],
+    [
+     277.7,
+     488.1
+    ],
+    [
+     270.4,
+     487.1
+    ],
+    [
+     261.9,
+     486.9
+    ],
+    [
+     247.1,
+     485.7
+    ],
+    [
+     217.0,
+     484.5
+    ],
+    [
+     200.7,
+     483.0
+    ],
+    [
+     189.4,
+     480.9
+    ],
+    [
+     175.2,
+     477.7
+    ],
+    [
+     172.8,
+     476.8
+    ],
+    [
+     151.9,
+     475.2
+    ],
+    [
+     145.3,
+     475.7
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.03,
+    "hoyder": [
+     156.4,
+     156.3,
+     156.3,
+     156.1,
+     156.0,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.2,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.1
+    ]
+   },
+   "lengde_m": 80.4,
+   "maks_stigning_pst": 2.2
+  },
+  {
+   "id": "g6",
+   "fra": "g1c",
+   "til": "g1sd",
+   "punkter": [
+    [
+     136.9,
+     479.7
+    ],
+    [
+     132.5,
+     486.3
+    ],
+    [
+     130.1,
+     516.5
+    ],
+    [
+     130.6,
+     518.0
+    ],
+    [
+     131.2,
+     527.1
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.88,
+    "hoyder": [
+     156.1,
+     156.1,
+     156.1,
+     156.1,
+     156.2,
+     156.2,
+     156.1,
+     156.1,
+     156.1
+    ]
+   },
+   "lengde_m": 39.1,
+   "maks_stigning_pst": 0.7
+  },
+  {
+   "id": "m1",
+   "fra": "o2",
+   "til": "mA",
+   "punkter": [
+    [
+     436.8,
+     437.3
+    ],
+    [
+     452.6,
+     424.2
+    ],
+    [
+     469.1,
+     414.1
+    ],
+    [
+     483.1,
+     403.5
+    ],
+    [
+     496.4,
+     394.6
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": true,
+   "darlig_sikt": true,
+   "merknad": "bratt mellom 44 og 78 ned mot rundkjøringen",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.04,
+    "hoyder": [
+     158.4,
+     158.8,
+     159.2,
+     159.5,
+     159.8,
+     160.2,
+     160.8,
+     161.4,
+     161.9,
+     162.4,
+     162.8
+    ]
+   },
+   "lengde_m": 50.4,
+   "maks_stigning_pst": 11.1
+  },
+  {
+   "id": "m2",
+   "fra": "mA",
+   "til": "j1",
+   "punkter": [
+    [
+     544.0,
+     370.1
+    ],
+    [
+     558.8,
+     363.1
+    ],
+    [
+     589.6,
+     347.0
+    ],
+    [
+     602.5,
+     341.2
+    ],
+    [
+     612.2,
+     337.7
+    ],
+    [
+     613.7,
+     337.1
+    ],
+    [
+     629.9,
+     333.4
+    ],
+    [
+     701.1,
+     314.1
+    ],
+    [
+     709.1,
+     311.7
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": true,
+   "darlig_sikt": true,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.95,
+    "hoyder": [
+     162.8,
+     163.3,
+     163.9,
+     164.4,
+     165.1,
+     165.6,
+     166.1,
+     166.6,
+     167.2,
+     167.8,
+     168.3,
+     168.7,
+     169.3,
+     169.7,
+     170.3,
+     171.0,
+     171.6,
+     171.9,
+     172.2,
+     173.0
+    ]
+   },
+   "lengde_m": 94.1,
+   "maks_stigning_pst": 12.5
+  },
+  {
+   "id": "a1",
+   "fra": "oA",
+   "til": "mA",
+   "punkter": [
+    [
+     488.2,
+     326.9
+    ],
+    [
+     507.8,
+     358.3
+    ]
+   ],
+   "type": "gangvei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "usikker: OSM har denne som gangvei",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.13,
+    "hoyder": [
+     161.8,
+     161.8,
+     162.1,
+     162.2,
+     162.3,
+     162.6,
+     162.8,
+     162.8
+    ]
+   },
+   "lengde_m": 35.9,
+   "maks_stigning_pst": 3.7
+  },
+  {
+   "id": "n1",
+   "fra": "n56",
+   "til": "j1",
+   "punkter": [
+    [
+     725.3,
+     238.7
+    ],
+    [
+     728.5,
+     247.2
+    ],
+    [
+     735.0,
+     276.8
+    ],
+    [
+     740.0,
+     304.0
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": true,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.86,
+    "hoyder": [
+     170.1,
+     170.3,
+     170.8,
+     171.2,
+     171.7,
+     172.0,
+     172.3,
+     172.6,
+     173.0
+    ]
+   },
+   "lengde_m": 38.9,
+   "maks_stigning_pst": 9.9
+  },
+  {
+   "id": "v1",
+   "fra": "j2",
+   "til": "lV",
+   "punkter": [
+    [
+     758.5,
+     346.6
+    ],
+    [
+     772.0,
+     354.1
+    ],
+    [
+     769.3,
+     359.1
+    ],
+    [
+     765.4,
+     367.7
+    ],
+    [
+     757.6,
+     381.8
+    ],
+    [
+     751.4,
+     395.3
+    ],
+    [
+     739.4,
+     416.9
+    ],
+    [
+     737.4,
+     420.5
+    ],
+    [
+     725.5,
+     444.6
+    ],
+    [
+     713.1,
+     467.2
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": true,
+   "darlig_sikt": false,
+   "merknad": "går av til høyre etter rundkjøringen",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.89,
+    "hoyder": [
+     172.9,
+     173.1,
+     173.3,
+     173.3,
+     172.8,
+     172.2,
+     171.3,
+     170.8,
+     170.3,
+     169.8,
+     169.1,
+     168.7,
+     168.2,
+     167.6,
+     167.2
+    ]
+   },
+   "lengde_m": 68.4,
+   "maks_stigning_pst": 13.6
+  },
+  {
+   "id": "l0",
+   "fra": "o1",
+   "til": "o2",
+   "punkter": [
+    [
+     406.3,
+     444.3
+    ],
+    [
+     419.1,
+     447.4
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": true,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.56,
+    "hoyder": [
+     158.0,
+     158.1,
+     158.4
+    ]
+   },
+   "lengde_m": 9.1,
+   "maks_stigning_pst": 4.8
+  },
+  {
+   "id": "l1",
+   "fra": "o2",
+   "til": "lV",
+   "punkter": [
+    [
+     467.0,
+     461.8
+    ],
+    [
+     487.5,
+     465.3
+    ],
+    [
+     499.0,
+     463.5
+    ],
+    [
+     509.9,
+     458.9
+    ],
+    [
+     522.1,
+     453.3
+    ],
+    [
+     545.2,
+     440.4
+    ],
+    [
+     559.7,
+     433.8
+    ],
+    [
+     571.4,
+     427.7
+    ],
+    [
+     583.8,
+     422.1
+    ],
+    [
+     592.0,
+     420.1
+    ],
+    [
+     599.1,
+     421.6
+    ],
+    [
+     611.6,
+     427.8
+    ],
+    [
+     677.7,
+     460.5
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": true,
+   "darlig_sikt": true,
+   "merknad": "114–98 litt høyere enn rundkjøringen",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.03,
+    "hoyder": [
+     158.4,
+     158.7,
+     159.2,
+     159.7,
+     160.2,
+     160.6,
+     161.1,
+     161.6,
+     162.0,
+     162.4,
+     162.8,
+     163.2,
+     163.7,
+     164.0,
+     164.5,
+     164.9,
+     165.3,
+     165.7,
+     166.2,
+     166.5,
+     166.7,
+     166.9,
+     167.0,
+     167.1,
+     167.2,
+     167.2,
+     167.2
+    ]
+   },
+   "lengde_m": 130.8,
+   "maks_stigning_pst": 9.7
+  },
+  {
+   "id": "l2",
+   "fra": "lV",
+   "til": "l3",
+   "punkter": [
+    [
+     719.7,
+     487.0
+    ],
+    [
+     735.3,
+     494.4
+    ],
+    [
+     765.2,
+     510.2
+    ],
+    [
+     777.3,
+     517.2
+    ],
+    [
+     787.3,
+     522.1
+    ],
+    [
+     796.7,
+     525.5
+    ],
+    [
+     813.9,
+     526.2
+    ],
+    [
+     850.8,
+     526.4
+    ],
+    [
+     868.7,
+     525.8
+    ],
+    [
+     888.0,
+     526.9
+    ],
+    [
+     904.7,
+     527.1
+    ],
+    [
+     922.6,
+     526.5
+    ],
+    [
+     927.1,
+     526.3
+    ],
+    [
+     936.0,
+     525.8
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.1,
+    "hoyder": [
+     167.2,
+     167.2,
+     167.2,
+     167.3,
+     167.4,
+     167.5,
+     167.7,
+     167.8,
+     168.1,
+     168.3,
+     168.6,
+     168.6,
+     168.6,
+     168.6,
+     168.6,
+     168.6,
+     168.6,
+     168.6,
+     168.6,
+     168.7,
+     168.8,
+     169.0,
+     169.2
+    ]
+   },
+   "lengde_m": 112.2,
+   "maks_stigning_pst": 4.6
+  },
+  {
+   "id": "f0",
+   "fra": "j1",
+   "til": "j2",
+   "punkter": [
+    [
+     740,
+     326
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "fra rundkjøringen ved 56/58",
+   "profil": {
+    "steg_m": 5.55,
+    "hoyder": [
+     173.0,
+     172.9,
+     172.9
+    ]
+   },
+   "lengde_m": 11.1,
+   "maks_stigning_pst": 0.8
+  },
+  {
+   "id": "f1",
+   "fra": "j2",
+   "til": "e1",
+   "punkter": [
+    [
+     758.5,
+     346.6
+    ],
+    [
+     772.0,
+     354.1
+    ],
+    [
+     782.2,
+     360.4
+    ],
+    [
+     811.2,
+     376.5
+    ],
+    [
+     824.7,
+     385.2
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.03,
+    "hoyder": [
+     172.9,
+     173.1,
+     173.3,
+     173.6,
+     173.8,
+     174.0,
+     174.2,
+     174.4,
+     174.5,
+     174.7,
+     174.8,
+     174.9
+    ]
+   },
+   "lengde_m": 55.3,
+   "maks_stigning_pst": 4.5
+  },
+  {
+   "id": "w1",
+   "fra": "e1",
+   "til": "p3",
+   "punkter": [
+    [
+     872.8,
+     409.3
+    ],
+    [
+     880.8,
+     410.3
+    ],
+    [
+     883.2,
+     409.6
+    ],
+    [
+     887.3,
+     408.6
+    ],
+    [
+     895.0,
+     401.7
+    ],
+    [
+     905.9,
+     389.2
+    ],
+    [
+     916.5,
+     373.5
+    ],
+    [
+     924.5,
+     358.9
+    ],
+    [
+     932.1,
+     342.9
+    ],
+    [
+     941.0,
+     327.5
+    ],
+    [
+     954.6,
+     300.9
+    ],
+    [
+     957.8,
+     295.9
+    ],
+    [
+     981.0,
+     259.7
+    ],
+    [
+     984.4,
+     253.8
+    ],
+    [
+     987.9,
+     246.6
+    ],
+    [
+     990.5,
+     239.8
+    ],
+    [
+     992.4,
+     230.5
+    ],
+    [
+     992.5,
+     226.4
+    ],
+    [
+     992.2,
+     222.0
+    ],
+    [
+     989.9,
+     216.2
+    ],
+    [
+     984.0,
+     197.3
+    ],
+    [
+     979.3,
+     183.7
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": true,
+   "darlig_sikt": false,
+   "merknad": "følger retningen til f1",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.95,
+    "hoyder": [
+     174.9,
+     175.0,
+     175.2,
+     175.4,
+     175.6,
+     175.7,
+     175.8,
+     175.9,
+     175.9,
+     175.9,
+     175.9,
+     176.0,
+     176.0,
+     175.9,
+     175.9,
+     175.9,
+     175.8,
+     175.7,
+     175.5,
+     175.4,
+     175.2,
+     175.0,
+     174.8,
+     174.3,
+     173.8,
+     173.4
+    ]
+   },
+   "lengde_m": 123.9,
+   "maks_stigning_pst": 9.2,
+   "folger": "f1"
+  },
+  {
+   "id": "d1",
+   "fra": "l3",
+   "til": "g3c",
+   "punkter": [
+    [
+     966.7,
+     520.1
+    ],
+    [
+     971.2,
+     518.7
+    ],
+    [
+     972.9,
+     517.2
+    ],
+    [
+     978.4,
+     512.6
+    ],
+    [
+     987.4,
+     500.9
+    ],
+    [
+     1004.4,
+     470.2
+    ],
+    [
+     1023.3,
+     439.9
+    ],
+    [
+     1033.8,
+     420.8
+    ],
+    [
+     1055.4,
+     384.0
+    ],
+    [
+     1065.7,
+     364.9
+    ],
+    [
+     1068.2,
+     361.4
+    ],
+    [
+     1077.4,
+     348.8
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.91,
+    "hoyder": [
+     169.2,
+     169.5,
+     169.7,
+     169.8,
+     169.9,
+     170.0,
+     170.0,
+     170.0,
+     169.9,
+     169.9,
+     169.8,
+     169.7,
+     169.5,
+     169.4,
+     169.3,
+     169.2,
+     169.0,
+     168.8,
+     168.6,
+     168.4
+    ]
+   },
+   "lengde_m": 93.3,
+   "maks_stigning_pst": 4.1
+  },
+  {
+   "id": "d2",
+   "fra": "g3c",
+   "til": "r1",
+   "punkter": [
+    [
+     1112.5,
+     289.7
+    ],
+    [
+     1127.9,
+     263.2
+    ],
+    [
+     1136.9,
+     250.6
+    ],
+    [
+     1147.6,
+     242.3
+    ],
+    [
+     1159.8,
+     238.5
+    ],
+    [
+     1167.0,
+     238.2
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "sløyfe ved 147–155 og 124–128 som fungerer som rundkjøring; holdes toveis",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.81,
+    "hoyder": [
+     168.4,
+     168.3,
+     168.3,
+     168.3,
+     168.3,
+     168.4,
+     168.4,
+     168.6,
+     168.6,
+     168.7,
+     168.8,
+     168.9,
+     168.9
+    ]
+   },
+   "lengde_m": 57.8,
+   "maks_stigning_pst": 1.9
+  },
+  {
+   "id": "r1",
+   "fra": "p3",
+   "til": "r0",
+   "punkter": [
+    [
+     990.7,
+     158.3
+    ],
+    [
+     1046.1,
+     145.9
+    ],
+    [
+     1130.7,
+     121.6
+    ],
+    [
+     1138.4,
+     121.4
+    ],
+    [
+     1146.1,
+     121.6
+    ],
+    [
+     1153.7,
+     123.8
+    ],
+    [
+     1159.7,
+     126.8
+    ],
+    [
+     1166.0,
+     133.5
+    ]
+   ],
+   "type": "hovedaare",
+   "bredde": "bred",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "rundt P grend 3 til innkjøringen",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.93,
+    "hoyder": [
+     173.4,
+     173.3,
+     173.1,
+     172.9,
+     172.7,
+     172.6,
+     172.6,
+     172.6,
+     172.6,
+     172.6,
+     172.6,
+     172.6,
+     172.5,
+     172.5,
+     172.4,
+     172.3,
+     172.1,
+     172.0,
+     171.8
+    ]
+   },
+   "lengde_m": 88.7,
+   "maks_stigning_pst": 4.2
+  },
+  {
+   "id": "r2",
+   "fra": "r0",
+   "til": "r1",
+   "punkter": [
+    [
+     1176.0,
+     149.2
+    ],
+    [
+     1180.6,
+     159.7
+    ],
+    [
+     1180.4,
+     170.8
+    ],
+    [
+     1180.4,
+     172.6
+    ],
+    [
+     1180.1,
+     186.0
+    ],
+    [
+     1178.6,
+     208.9
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": true,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.12,
+    "hoyder": [
+     171.8,
+     171.5,
+     171.2,
+     170.6,
+     170.2,
+     169.7,
+     169.3,
+     169.1,
+     168.9
+    ]
+   },
+   "lengde_m": 40.9,
+   "maks_stigning_pst": 9.4
+  },
+  {
+   "id": "r3",
+   "fra": "r1",
+   "til": "r2",
+   "punkter": [
+    [
+     1175.3,
+     254.5
+    ],
+    [
+     1173.7,
+     273.8
+    ],
+    [
+     1171.6,
+     308.7
+    ],
+    [
+     1169.9,
+     323.9
+    ],
+    [
+     1166.8,
+     334.3
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "sløyfe ved 147–155 og 124–128 som fungerer som rundkjøring; holdes toveis",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.81,
+    "hoyder": [
+     168.9,
+     168.8,
+     168.6,
+     168.5,
+     168.3,
+     168.2,
+     168.1,
+     168.1,
+     168.0,
+     168.1
+    ]
+   },
+   "lengde_m": 43.3,
+   "maks_stigning_pst": 3.8
+  },
+  {
+   "id": "r4",
+   "fra": "g3c",
+   "til": "r2",
+   "punkter": [
+    [
+     1093.2,
+     338.6
+    ],
+    [
+     1109.5,
+     347.3
+    ],
+    [
+     1117.3,
+     349.1
+    ],
+    [
+     1124.1,
+     349.9
+    ],
+    [
+     1130.8,
+     350.1
+    ],
+    [
+     1154.2,
+     347.4
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "sløyfe ved 147–155 og 124–128 som fungerer som rundkjøring; holdes toveis",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.79,
+    "hoyder": [
+     168.4,
+     168.3,
+     168.2,
+     168.2,
+     168.1,
+     168.0,
+     168.0,
+     168.1
+    ]
+   },
+   "lengde_m": 33.5,
+   "maks_stigning_pst": 1.5
+  },
+  {
+   "id": "r5",
+   "fra": "r2",
+   "til": "r3",
+   "punkter": [
+    [
+     1177.7,
+     344.9
+    ]
+   ],
+   "type": "vei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": true,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "osm": true,
+   "profil": {
+    "steg_m": 5.14,
+    "hoyder": [
+     168.1,
+     168.2,
+     168.6,
+     168.8
+    ]
+   },
+   "lengde_m": 15.4,
+   "maks_stigning_pst": 4.7
+  },
+  {
+   "id": "gw1",
+   "fra": "lV",
+   "til": "gv",
+   "punkter": [
+    [
+     694.5,
+     501.8
+    ],
+    [
+     684.1,
+     523.3
+    ],
+    [
+     680.1,
+     534.2
+    ],
+    [
+     676.8,
+     545.5
+    ],
+    [
+     674.3,
+     559.9
+    ]
+   ],
+   "type": "gangvei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "usikker: gangvei eller kjørbar?",
+   "osm": true,
+   "profil": {
+    "steg_m": 4.88,
+    "hoyder": [
+     167.2,
+     166.9,
+     166.3,
+     165.2,
+     164.3,
+     163.6,
+     162.9,
+     162.4,
+     162.1
+    ]
+   },
+   "lengde_m": 39.1,
+   "maks_stigning_pst": 18.0
+  },
+  {
+   "id": "gw2",
+   "fra": "gv0",
+   "til": "gv",
+   "punkter": [
+    [
+     580,
+     565
+    ]
+   ],
+   "type": "gangvei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "",
+   "profil": {
+    "steg_m": 5.05,
+    "hoyder": [
+     156.6,
+     157.0,
+     157.2,
+     157.7,
+     158.2,
+     159.1,
+     159.8,
+     159.1,
+     159.0,
+     159.0,
+     159.1,
+     158.9,
+     159.0,
+     158.9,
+     159.0,
+     159.0,
+     159.2,
+     159.6,
+     160.1,
+     160.4,
+     160.6,
+     160.8,
+     161.0,
+     161.1,
+     161.2,
+     161.4,
+     161.6,
+     162.1
+    ]
+   },
+   "lengde_m": 136.3,
+   "maks_stigning_pst": 13.9
+  },
+  {
+   "id": "gw3",
+   "fra": "gv",
+   "til": "gvE",
+   "punkter": [
+    [
+     880,
+     600
+    ]
+   ],
+   "type": "gangvei",
+   "bredde": "smal",
+   "parkering": false,
+   "kan_enveis": false,
+   "bratt": false,
+   "darlig_sikt": false,
+   "merknad": "går ut av området",
+   "profil": {
+    "steg_m": 5.03,
+    "hoyder": [
+     162.1,
+     162.1,
+     162.8,
+     162.6,
+     163.2,
+     163.7,
+     163.5,
+     163.6,
+     163.9,
+     164.8,
+     165.0,
+     164.7,
+     164.4,
+     164.5,
+     164.5,
+     164.5,
+     164.6,
+     164.6,
+     164.7,
+     165.0,
+     165.3
+    ]
+   },
+   "lengde_m": 100.6,
+   "maks_stigning_pst": 9.5
+  }
+ ],
+ "hus": [
+  {
+   "nr": 1,
+   "grend": 1,
+   "x": 271.9,
+   "y": 522.9,
+   "kant": "g5",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 2,
+   "grend": 1,
+   "x": 254.8,
+   "y": 511.4,
+   "kant": "g5",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 3,
+   "grend": 1,
+   "x": 238.3,
+   "y": 514.2,
+   "kant": "g5",
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 4,
+   "grend": 1,
+   "x": 223.5,
+   "y": 516.6,
+   "kant": "g5",
+   "hoyde": 156.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 5,
+   "grend": 1,
+   "x": 208.6,
+   "y": 511.4,
+   "kant": "g5",
+   "hoyde": 156.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 6,
+   "grend": 1,
+   "x": 153.1,
+   "y": 501.6,
+   "kant": "g6",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 7,
+   "grend": 1,
+   "x": 153.4,
+   "y": 520.7,
+   "kant": "g6",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 8,
+   "grend": 1,
+   "x": 156.0,
+   "y": 534.2,
+   "kant": "g6",
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 9,
+   "grend": 1,
+   "x": 105.1,
+   "y": 531.1,
+   "kant": "g6",
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 10,
+   "grend": 1,
+   "x": 101.6,
+   "y": 520.7,
+   "kant": "g6",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 11,
+   "grend": 1,
+   "x": 103.3,
+   "y": 498.4,
+   "kant": "g6",
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 12,
+   "grend": 1,
+   "x": 301.1,
+   "y": 445.1,
+   "kant": "g2",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 13,
+   "grend": 1,
+   "x": 284.8,
+   "y": 444.5,
+   "kant": "g2",
+   "hoyde": 156.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 14,
+   "grend": 1,
+   "x": 266.0,
+   "y": 439.9,
+   "kant": "g2",
+   "hoyde": 156.5,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 15,
+   "grend": 1,
+   "x": 251.9,
+   "y": 442.9,
+   "kant": "g2",
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 16,
+   "grend": 1,
+   "x": 231.5,
+   "y": 441.2,
+   "kant": "g2",
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 17,
+   "grend": 1,
+   "x": 217.4,
+   "y": 444.1,
+   "kant": "g2",
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 18,
+   "grend": 1,
+   "x": 199.5,
+   "y": 441.3,
+   "kant": "g2",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 19,
+   "grend": 1,
+   "x": 158.0,
+   "y": 443.2,
+   "kant": "g2",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 20,
+   "grend": 1,
+   "x": 143.7,
+   "y": 437.0,
+   "kant": "g2",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 21,
+   "grend": 1,
+   "x": 128.7,
+   "y": 436.4,
+   "kant": "g2",
+   "hoyde": 156.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 22,
+   "grend": 1,
+   "x": 77.8,
+   "y": 433.5,
+   "kant": "g4",
+   "hoyde": 156.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 23,
+   "grend": 1,
+   "x": 77.0,
+   "y": 449.5,
+   "kant": "g4",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 24,
+   "grend": 1,
+   "x": 76.2,
+   "y": 466.8,
+   "kant": "g4",
+   "hoyde": 156.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 25,
+   "grend": 1,
+   "x": 33.3,
+   "y": 427.6,
+   "hoyde": 156.1,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 26,
+   "grend": 1,
+   "x": 24.0,
+   "y": 408.6,
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 27,
+   "grend": 1,
+   "x": 24.8,
+   "y": 390.9,
+   "hoyde": 156.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 28,
+   "grend": 1,
+   "x": 78.9,
+   "y": 377.3,
+   "kant": "g2",
+   "hoyde": 157.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 29,
+   "grend": 1,
+   "x": 94.1,
+   "y": 377.9,
+   "kant": "g2",
+   "hoyde": 157.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 30,
+   "grend": 1,
+   "x": 116.9,
+   "y": 380.2,
+   "kant": "g2",
+   "hoyde": 157.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 31,
+   "grend": 1,
+   "x": 125.9,
+   "y": 383.0,
+   "kant": "g2",
+   "hoyde": 156.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 32,
+   "grend": 1,
+   "x": 147.7,
+   "y": 377.4,
+   "kant": "g2",
+   "hoyde": 157.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 33,
+   "grend": 1,
+   "x": 165.1,
+   "y": 378.0,
+   "kant": "g2",
+   "hoyde": 157.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 34,
+   "grend": 1,
+   "x": 201.0,
+   "y": 381.8,
+   "kant": "g2",
+   "hoyde": 157.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 35,
+   "grend": 1,
+   "x": 218.4,
+   "y": 382.3,
+   "kant": "g2",
+   "hoyde": 157.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 36,
+   "grend": 1,
+   "x": 239.2,
+   "y": 383.9,
+   "kant": "g2",
+   "hoyde": 157.5,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 37,
+   "grend": 1,
+   "x": 248.0,
+   "y": 375.6,
+   "kant": "g2",
+   "hoyde": 157.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 38,
+   "grend": 1,
+   "x": 273.1,
+   "y": 375.4,
+   "kant": "g2",
+   "hoyde": 156.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 39,
+   "grend": 1,
+   "x": 287.3,
+   "y": 382.2,
+   "kant": "g2",
+   "hoyde": 156.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 40,
+   "grend": 2,
+   "x": 444.9,
+   "y": 395.6,
+   "kant": "m1",
+   "hoyde": 160.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 41,
+   "grend": 2,
+   "x": 455.1,
+   "y": 376.8,
+   "kant": "m1",
+   "hoyde": 160.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 42,
+   "grend": 2,
+   "x": 465.7,
+   "y": 370.0,
+   "kant": "m1",
+   "hoyde": 161.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 43,
+   "grend": 2,
+   "x": 478.3,
+   "y": 353.0,
+   "kant": "m1",
+   "hoyde": 162.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 44,
+   "grend": 2,
+   "x": 521.9,
+   "y": 327.4,
+   "kant": "m2",
+   "hoyde": 165.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 45,
+   "grend": 2,
+   "x": 535.8,
+   "y": 318.1,
+   "kant": "m2",
+   "hoyde": 165.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 46,
+   "grend": 2,
+   "x": 552.6,
+   "y": 313.5,
+   "kant": "m2",
+   "hoyde": 167.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 47,
+   "grend": 2,
+   "x": 569.3,
+   "y": 309.0,
+   "kant": "m2",
+   "hoyde": 167.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 48,
+   "grend": 2,
+   "x": 587.8,
+   "y": 303.7,
+   "kant": "m2",
+   "hoyde": 167.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 49,
+   "grend": 2,
+   "x": 609.5,
+   "y": 314.7,
+   "kant": "m2",
+   "hoyde": 168.3,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 50,
+   "grend": 2,
+   "x": 616.7,
+   "y": 312.7,
+   "kant": "m2",
+   "hoyde": 168.5,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 51,
+   "grend": 2,
+   "x": 639.4,
+   "y": 299.4,
+   "kant": "m2",
+   "hoyde": 169.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 52,
+   "grend": 2,
+   "x": 654.6,
+   "y": 295.3,
+   "kant": "m2",
+   "hoyde": 169.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 53,
+   "grend": 2,
+   "x": 674.8,
+   "y": 292.7,
+   "kant": "m2",
+   "hoyde": 170.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 54,
+   "grend": 2,
+   "x": 684.8,
+   "y": 285.1,
+   "kant": "m2",
+   "hoyde": 171.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 55,
+   "grend": 2,
+   "x": 704.5,
+   "y": 279.4,
+   "kant": "m2",
+   "hoyde": 171.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 56,
+   "grend": 2,
+   "x": 757.6,
+   "y": 251.0,
+   "kant": "n1",
+   "hoyde": 172.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 57,
+   "grend": 2,
+   "x": 760.6,
+   "y": 270.6,
+   "kant": "n1",
+   "hoyde": 173.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 58,
+   "grend": 2,
+   "x": 777.7,
+   "y": 335.1,
+   "kant": "f1",
+   "hoyde": 174.4,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 59,
+   "grend": 2,
+   "x": 795.4,
+   "y": 332.1,
+   "kant": "f1",
+   "hoyde": 174.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 60,
+   "grend": 2,
+   "x": 812.3,
+   "y": 340.2,
+   "kant": "f1",
+   "hoyde": 175.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 61,
+   "grend": 2,
+   "x": 824.6,
+   "y": 351.9,
+   "kant": "f1",
+   "hoyde": 175.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 62,
+   "grend": 2,
+   "x": 836.4,
+   "y": 370.9,
+   "kant": "f1",
+   "hoyde": 175.1,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 63,
+   "grend": 2,
+   "x": 851.7,
+   "y": 372.0,
+   "kant": "f1",
+   "hoyde": 175.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 64,
+   "grend": 2,
+   "x": 864.9,
+   "y": 437.9,
+   "kant": "f1",
+   "hoyde": 174.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 65,
+   "grend": 2,
+   "x": 849.9,
+   "y": 428.9,
+   "kant": "f1",
+   "hoyde": 174.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 66,
+   "grend": 2,
+   "x": 837.0,
+   "y": 421.3,
+   "kant": "f1",
+   "hoyde": 174.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 67,
+   "grend": 2,
+   "x": 820.0,
+   "y": 410.9,
+   "kant": "f1",
+   "hoyde": 173.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 68,
+   "grend": 2,
+   "x": 806.1,
+   "y": 407.7,
+   "kant": "f1",
+   "hoyde": 174.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 69,
+   "grend": 2,
+   "x": 789.5,
+   "y": 396.0,
+   "kant": "f1",
+   "hoyde": 173.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 70,
+   "grend": 2,
+   "x": 776.4,
+   "y": 388.2,
+   "kant": "f1",
+   "hoyde": 173.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 71,
+   "grend": 2,
+   "x": 741.9,
+   "y": 370.3,
+   "kant": "m2",
+   "hoyde": 172.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 72,
+   "grend": 2,
+   "x": 727.0,
+   "y": 361.6,
+   "kant": "m2",
+   "hoyde": 172.5,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 73,
+   "grend": 2,
+   "x": 712.7,
+   "y": 353.8,
+   "kant": "m2",
+   "hoyde": 172.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 74,
+   "grend": 2,
+   "x": 693.6,
+   "y": 353.3,
+   "kant": "m2",
+   "hoyde": 171.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 75,
+   "grend": 2,
+   "x": 679.7,
+   "y": 344.1,
+   "kant": "m2",
+   "hoyde": 171.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 76,
+   "grend": 2,
+   "x": 600.5,
+   "y": 371.2,
+   "kant": "m2",
+   "hoyde": 166.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 77,
+   "grend": 2,
+   "x": 586.3,
+   "y": 378.2,
+   "kant": "m2",
+   "hoyde": 165.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 78,
+   "grend": 2,
+   "x": 568.5,
+   "y": 387.2,
+   "kant": "m2",
+   "hoyde": 164.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 79,
+   "grend": 2,
+   "x": 555.2,
+   "y": 393.9,
+   "kant": "m2",
+   "hoyde": 164.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 80,
+   "grend": 2,
+   "x": 537.9,
+   "y": 402.6,
+   "kant": "m1",
+   "hoyde": 162.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 81,
+   "grend": 2,
+   "x": 524.0,
+   "y": 409.4,
+   "kant": "m1",
+   "hoyde": 162.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 82,
+   "grend": 2,
+   "x": 507.2,
+   "y": 418.6,
+   "kant": "m1",
+   "hoyde": 161.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 83,
+   "grend": 2,
+   "x": 492.9,
+   "y": 425.1,
+   "kant": "m1",
+   "hoyde": 160.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 84,
+   "grend": 2,
+   "x": 643.2,
+   "y": 409.9,
+   "kant": "l1",
+   "hoyde": 167.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 85,
+   "grend": 2,
+   "x": 659.5,
+   "y": 420.7,
+   "kant": "l1",
+   "hoyde": 167.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 86,
+   "grend": 2,
+   "x": 673.6,
+   "y": 437.7,
+   "kant": "l1",
+   "hoyde": 167.6,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 87,
+   "grend": 2,
+   "x": 680.5,
+   "y": 440.6,
+   "kant": "l1",
+   "hoyde": 167.6,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 88,
+   "grend": 2,
+   "x": 705.5,
+   "y": 441.5,
+   "kant": "l1",
+   "hoyde": 167.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 89,
+   "grend": 2,
+   "x": 737.6,
+   "y": 459.4,
+   "kant": "l2",
+   "hoyde": 167.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 90,
+   "grend": 2,
+   "x": 752.9,
+   "y": 468.4,
+   "kant": "l2",
+   "hoyde": 167.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 91,
+   "grend": 2,
+   "x": 769.0,
+   "y": 480.5,
+   "kant": "l2",
+   "hoyde": 167.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 92,
+   "grend": 2,
+   "x": 781.1,
+   "y": 481.8,
+   "kant": "l2",
+   "hoyde": 168.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 93,
+   "grend": 2,
+   "x": 799.4,
+   "y": 491.5,
+   "kant": "l2",
+   "hoyde": 168.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 94,
+   "grend": 2,
+   "x": 828.6,
+   "y": 496.1,
+   "kant": "l2",
+   "hoyde": 169.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 95,
+   "grend": 2,
+   "x": 847.7,
+   "y": 498.1,
+   "kant": "l2",
+   "hoyde": 169.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 96,
+   "grend": 2,
+   "x": 861.9,
+   "y": 492.5,
+   "kant": "l2",
+   "hoyde": 169.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 97,
+   "grend": 2,
+   "x": 881.0,
+   "y": 494.5,
+   "kant": "l2",
+   "hoyde": 169.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 98,
+   "grend": 2,
+   "x": 892.6,
+   "y": 553.7,
+   "kant": "l2",
+   "hoyde": 168.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 99,
+   "grend": 2,
+   "x": 877.1,
+   "y": 553.3,
+   "kant": "l2",
+   "hoyde": 168.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 100,
+   "grend": 2,
+   "x": 857.1,
+   "y": 552.5,
+   "kant": "l2",
+   "hoyde": 167.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 101,
+   "grend": 2,
+   "x": 843.8,
+   "y": 556.6,
+   "kant": "l2",
+   "hoyde": 168.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 102,
+   "grend": 2,
+   "x": 823.9,
+   "y": 554.6,
+   "kant": "l2",
+   "hoyde": 168.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 103,
+   "grend": 2,
+   "x": 808.3,
+   "y": 554.1,
+   "kant": "l2",
+   "hoyde": 168.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 104,
+   "grend": 2,
+   "x": 770.5,
+   "y": 541.9,
+   "kant": "l2",
+   "hoyde": 167.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 105,
+   "grend": 2,
+   "x": 755.5,
+   "y": 533.5,
+   "kant": "l2",
+   "hoyde": 167.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 106,
+   "grend": 2,
+   "x": 741.8,
+   "y": 525.6,
+   "kant": "l2",
+   "hoyde": 166.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 107,
+   "grend": 2,
+   "x": 724.9,
+   "y": 521.2,
+   "kant": "l2",
+   "hoyde": 166.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 108,
+   "grend": 2,
+   "x": 711.3,
+   "y": 511.7,
+   "kant": "l2",
+   "hoyde": 166.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 109,
+   "grend": 2,
+   "x": 676.1,
+   "y": 494.3,
+   "kant": "l1",
+   "hoyde": 166.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 110,
+   "grend": 2,
+   "x": 663.2,
+   "y": 481.7,
+   "kant": "l1",
+   "hoyde": 166.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 111,
+   "grend": 2,
+   "x": 649.8,
+   "y": 479.0,
+   "kant": "l1",
+   "hoyde": 166.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 112,
+   "grend": 2,
+   "x": 633.1,
+   "y": 467.9,
+   "kant": "l1",
+   "hoyde": 166.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 113,
+   "grend": 2,
+   "x": 620.1,
+   "y": 459.6,
+   "kant": "l1",
+   "hoyde": 166.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 114,
+   "grend": 2,
+   "x": 572.3,
+   "y": 455.9,
+   "kant": "l1",
+   "hoyde": 163.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 115,
+   "grend": 2,
+   "x": 558.5,
+   "y": 470.7,
+   "kant": "l1",
+   "hoyde": 163.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 116,
+   "grend": 2,
+   "x": 544.8,
+   "y": 471.2,
+   "kant": "l1",
+   "hoyde": 162.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 117,
+   "grend": 3,
+   "x": 1208.2,
+   "y": 202.8,
+   "kant": "r2",
+   "hoyde": 170.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 118,
+   "grend": 3,
+   "x": 1207.4,
+   "y": 227.6,
+   "kant": "r3",
+   "hoyde": 170.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 119,
+   "grend": 3,
+   "x": 1206.5,
+   "y": 246.5,
+   "kant": "r3",
+   "hoyde": 169.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 120,
+   "grend": 3,
+   "x": 1205.2,
+   "y": 266.1,
+   "kant": "r3",
+   "hoyde": 169.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 121,
+   "grend": 3,
+   "x": 1196.7,
+   "y": 277.7,
+   "kant": "r3",
+   "hoyde": 169.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 122,
+   "grend": 3,
+   "x": 1206.1,
+   "y": 303.2,
+   "kant": "r3",
+   "hoyde": 169.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 123,
+   "grend": 3,
+   "x": 1205.9,
+   "y": 315.4,
+   "kant": "r3",
+   "hoyde": 169.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 124,
+   "grend": 3,
+   "x": 1201.2,
+   "y": 368.9,
+   "kant": "r5",
+   "hoyde": 169.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 125,
+   "grend": 3,
+   "x": 1178.5,
+   "y": 372.1,
+   "kant": "r5",
+   "hoyde": 169.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 126,
+   "grend": 3,
+   "x": 1160.1,
+   "y": 374.8,
+   "kant": "r4",
+   "hoyde": 168.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 127,
+   "grend": 3,
+   "x": 1146.1,
+   "y": 375.0,
+   "kant": "r4",
+   "hoyde": 168.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 128,
+   "grend": 3,
+   "x": 1126.9,
+   "y": 378.2,
+   "kant": "r4",
+   "hoyde": 168.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 129,
+   "grend": 3,
+   "x": 1083.0,
+   "y": 400.1,
+   "kant": "d1",
+   "hoyde": 169.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 130,
+   "grend": 3,
+   "x": 1074.4,
+   "y": 413.5,
+   "kant": "d1",
+   "hoyde": 169.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 131,
+   "grend": 3,
+   "x": 1062.4,
+   "y": 430.7,
+   "kant": "d1",
+   "hoyde": 169.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 132,
+   "grend": 3,
+   "x": 1053.4,
+   "y": 442.3,
+   "kant": "d1",
+   "hoyde": 170.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 133,
+   "grend": 3,
+   "x": 1034.8,
+   "y": 462.6,
+   "kant": "d1",
+   "hoyde": 170.1,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 134,
+   "grend": 3,
+   "x": 1032.9,
+   "y": 473.3,
+   "kant": "d1",
+   "hoyde": 170.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 135,
+   "grend": 3,
+   "x": 1026.5,
+   "y": 490.6,
+   "kant": "d1",
+   "hoyde": 170.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 136,
+   "grend": 3,
+   "x": 1016.0,
+   "y": 504.1,
+   "kant": "d1",
+   "hoyde": 169.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 137,
+   "grend": 3,
+   "x": 1004.9,
+   "y": 521.0,
+   "kant": "d1",
+   "hoyde": 169.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 138,
+   "grend": 3,
+   "x": 996.4,
+   "y": 534.1,
+   "kant": "d1",
+   "hoyde": 169.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 139,
+   "grend": 3,
+   "x": 967.7,
+   "y": 470.3,
+   "kant": "d1",
+   "hoyde": 171.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 140,
+   "grend": 3,
+   "x": 975.7,
+   "y": 454.8,
+   "kant": "d1",
+   "hoyde": 171.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 141,
+   "grend": 3,
+   "x": 988.4,
+   "y": 442.5,
+   "kant": "d1",
+   "hoyde": 171.4,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 142,
+   "grend": 3,
+   "x": 996.7,
+   "y": 424.8,
+   "kant": "d1",
+   "hoyde": 171.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 143,
+   "grend": 3,
+   "x": 1007.9,
+   "y": 408.2,
+   "kant": "d1",
+   "hoyde": 171.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 144,
+   "grend": 3,
+   "x": 1005.6,
+   "y": 391.4,
+   "kant": "d1",
+   "hoyde": 171.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 145,
+   "grend": 3,
+   "x": 1021.8,
+   "y": 376.6,
+   "kant": "d1",
+   "hoyde": 171.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 146,
+   "grend": 3,
+   "x": 1024.3,
+   "y": 359.9,
+   "kant": "d1",
+   "hoyde": 171.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 147,
+   "grend": 3,
+   "x": 1049.6,
+   "y": 328.7,
+   "kant": "d2",
+   "hoyde": 170.3,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 148,
+   "grend": 3,
+   "x": 1053.6,
+   "y": 310.8,
+   "kant": "d2",
+   "hoyde": 170.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 149,
+   "grend": 3,
+   "x": 1067.5,
+   "y": 294.3,
+   "kant": "d2",
+   "hoyde": 169.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 150,
+   "grend": 3,
+   "x": 1079.5,
+   "y": 284.8,
+   "kant": "d2",
+   "hoyde": 169.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 151,
+   "grend": 3,
+   "x": 1087.8,
+   "y": 267.2,
+   "kant": "d2",
+   "hoyde": 169.7,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 152,
+   "grend": 3,
+   "x": 1091.4,
+   "y": 249.7,
+   "kant": "d2",
+   "hoyde": 169.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 153,
+   "grend": 3,
+   "x": 1122.6,
+   "y": 221.0,
+   "kant": "d2",
+   "hoyde": 170.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 154,
+   "grend": 3,
+   "x": 1137.9,
+   "y": 212.6,
+   "kant": "d2",
+   "hoyde": 170.8,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 155,
+   "grend": 3,
+   "x": 1151.6,
+   "y": 217.0,
+   "kant": "d2",
+   "hoyde": 170.8,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 156,
+   "grend": 3,
+   "x": 1032.8,
+   "y": 237.7,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 157,
+   "grend": 3,
+   "x": 1025.1,
+   "y": 253.1,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 158,
+   "grend": 3,
+   "x": 1008.6,
+   "y": 263.8,
+   "kant": "w1",
+   "hoyde": 176.2,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 159,
+   "grend": 3,
+   "x": 994.2,
+   "y": 274.1,
+   "kant": "w1",
+   "hoyde": 176.2,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 160,
+   "grend": 3,
+   "x": 986.1,
+   "y": 288.5,
+   "kant": "w1",
+   "hoyde": 176.1,
+   "kilde": "adressepunkt"
+  },
+  {
+   "nr": 161,
+   "grend": 3,
+   "x": 969.1,
+   "y": 327.5,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 162,
+   "grend": 3,
+   "x": 960.7,
+   "y": 342.4,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 163,
+   "grend": 3,
+   "x": 955.5,
+   "y": 360.0,
+   "kant": "w1",
+   "hoyde": 176.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 164,
+   "grend": 3,
+   "x": 945.0,
+   "y": 374.9,
+   "kant": "w1",
+   "hoyde": 176.1,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 165,
+   "grend": 3,
+   "x": 939.9,
+   "y": 392.5,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 166,
+   "grend": 3,
+   "x": 929.3,
+   "y": 410.6,
+   "kant": "w1",
+   "hoyde": 175.9,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 167,
+   "grend": 3,
+   "x": 897.7,
+   "y": 346.7,
+   "kant": "w1",
+   "hoyde": 176.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 168,
+   "grend": 3,
+   "x": 908.8,
+   "y": 330.0,
+   "kant": "w1",
+   "hoyde": 176.6,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 169,
+   "grend": 3,
+   "x": 908.6,
+   "y": 310.2,
+   "kant": "w1",
+   "hoyde": 176.5,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 170,
+   "grend": 3,
+   "x": 922.5,
+   "y": 297.5,
+   "kant": "w1",
+   "hoyde": 176.5,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 171,
+   "grend": 3,
+   "x": 940.4,
+   "y": 263.3,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 172,
+   "grend": 3,
+   "x": 947.0,
+   "y": 247.6,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  },
+  {
+   "nr": 173,
+   "grend": 3,
+   "x": 964.5,
+   "y": 239.7,
+   "kant": "w1",
+   "hoyde": 176.0,
+   "kilde": "osm-bygg"
+  }
+ ],
+ "bygg": [
+  {
+   "hus": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+   ],
+   "linje": [
+    [
+     78.9,
+     377.3
+    ],
+    [
+     165.1,
+     378.0
+    ]
+   ]
+  },
+  {
+   "hus": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+   ],
+   "linje": [
+    [
+     201.0,
+     381.8
+    ],
+    [
+     287.3,
+     382.2
+    ]
+   ]
+  },
+  {
+   "hus": [
+    21,
+    20,
+    19
+   ],
+   "linje": [
+    [
+     128.7,
+     436.4
+    ],
+    [
+     158.0,
+     443.2
+    ]
+   ]
+  },
+  {
+   "hus": [
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12
+   ],
+   "linje": [
+    [
+     199.5,
+     441.3
+    ],
+    [
+     301.1,
+     445.1
+    ]
+   ]
+  },
+  {
+   "hus": [
+    27,
+    26,
+    25
+   ],
+   "linje": [
+    [
+     24.8,
+     390.9
+    ],
+    [
+     33.3,
+     427.6
+    ]
+   ]
+  },
+  {
+   "hus": [
+    22,
+    23,
+    24
+   ],
+   "linje": [
+    [
+     77.8,
+     433.5
+    ],
+    [
+     76.2,
+     466.8
+    ]
+   ]
+  },
+  {
+   "hus": [
+    11,
+    10,
+    9
+   ],
+   "linje": [
+    [
+     103.3,
+     498.4
+    ],
+    [
+     105.1,
+     531.1
+    ]
+   ]
+  },
+  {
+   "hus": [
+    6,
+    7,
+    8
+   ],
+   "linje": [
+    [
+     153.1,
+     501.6
+    ],
+    [
+     156.0,
+     534.2
+    ]
+   ]
+  },
+  {
+   "hus": [
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "linje": [
+    [
+     208.6,
+     511.4
+    ],
+    [
+     271.9,
+     522.9
+    ]
+   ]
+  },
+  {
+   "hus": [
+    40,
+    41,
+    42,
+    43
+   ],
+   "linje": [
+    [
+     444.9,
+     395.6
+    ],
+    [
+     478.3,
+     353.0
+    ]
+   ]
+  },
+  {
+   "hus": [
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+   ],
+   "linje": [
+    [
+     521.9,
+     327.4
+    ],
+    [
+     704.5,
+     279.4
+    ]
+   ]
+  },
+  {
+   "hus": [
+    83,
+    82,
+    81,
+    80,
+    79,
+    78,
+    77,
+    76
+   ],
+   "linje": [
+    [
+     492.9,
+     425.1
+    ],
+    [
+     600.5,
+     371.2
+    ]
+   ]
+  },
+  {
+   "hus": [
+    116,
+    115,
+    114
+   ],
+   "linje": [
+    [
+     544.8,
+     471.2
+    ],
+    [
+     572.3,
+     455.9
+    ]
+   ]
+  },
+  {
+   "hus": [
+    75,
+    74,
+    73,
+    72,
+    71
+   ],
+   "linje": [
+    [
+     679.7,
+     344.1
+    ],
+    [
+     741.9,
+     370.3
+    ]
+   ]
+  },
+  {
+   "hus": [
+    84,
+    85,
+    86,
+    87,
+    88
+   ],
+   "linje": [
+    [
+     643.2,
+     409.9
+    ],
+    [
+     705.5,
+     441.5
+    ]
+   ]
+  },
+  {
+   "hus": [
+    113,
+    112,
+    111,
+    110,
+    109
+   ],
+   "linje": [
+    [
+     620.1,
+     459.6
+    ],
+    [
+     676.1,
+     494.3
+    ]
+   ]
+  },
+  {
+   "hus": [
+    89,
+    90,
+    91,
+    92,
+    93
+   ],
+   "linje": [
+    [
+     737.6,
+     459.4
+    ],
+    [
+     799.4,
+     491.5
+    ]
+   ]
+  },
+  {
+   "hus": [
+    108,
+    107,
+    106,
+    105,
+    104
+   ],
+   "linje": [
+    [
+     711.3,
+     511.7
+    ],
+    [
+     770.5,
+     541.9
+    ]
+   ]
+  },
+  {
+   "hus": [
+    94,
+    95,
+    96,
+    97
+   ],
+   "linje": [
+    [
+     828.6,
+     496.1
+    ],
+    [
+     881.0,
+     494.5
+    ]
+   ]
+  },
+  {
+   "hus": [
+    103,
+    102,
+    101,
+    100,
+    99,
+    98
+   ],
+   "linje": [
+    [
+     808.3,
+     554.1
+    ],
+    [
+     892.6,
+     553.7
+    ]
+   ]
+  },
+  {
+   "hus": [
+    56,
+    57
+   ],
+   "linje": [
+    [
+     757.6,
+     251.0
+    ],
+    [
+     760.6,
+     270.6
+    ]
+   ]
+  },
+  {
+   "hus": [
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+   ],
+   "linje": [
+    [
+     777.7,
+     335.1
+    ],
+    [
+     851.7,
+     372.0
+    ]
+   ]
+  },
+  {
+   "hus": [
+    70,
+    69,
+    68,
+    67,
+    66,
+    65,
+    64
+   ],
+   "linje": [
+    [
+     776.4,
+     388.2
+    ],
+    [
+     864.9,
+     437.9
+    ]
+   ]
+  },
+  {
+   "hus": [
+    173,
+    172,
+    171
+   ],
+   "linje": [
+    [
+     964.5,
+     239.7
+    ],
+    [
+     940.4,
+     263.3
+    ]
+   ]
+  },
+  {
+   "hus": [
+    156,
+    157,
+    158,
+    159,
+    160
+   ],
+   "linje": [
+    [
+     1032.8,
+     237.7
+    ],
+    [
+     986.1,
+     288.5
+    ]
+   ]
+  },
+  {
+   "hus": [
+    170,
+    169,
+    168,
+    167
+   ],
+   "linje": [
+    [
+     922.5,
+     297.5
+    ],
+    [
+     897.7,
+     346.7
+    ]
+   ]
+  },
+  {
+   "hus": [
+    161,
+    162,
+    163,
+    164,
+    165,
+    166
+   ],
+   "linje": [
+    [
+     969.1,
+     327.5
+    ],
+    [
+     929.3,
+     410.6
+    ]
+   ]
+  },
+  {
+   "hus": [
+    152,
+    151,
+    150,
+    149,
+    148,
+    147
+   ],
+   "linje": [
+    [
+     1091.4,
+     249.7
+    ],
+    [
+     1049.6,
+     328.7
+    ]
+   ]
+  },
+  {
+   "hus": [
+    153,
+    154,
+    155
+   ],
+   "linje": [
+    [
+     1122.6,
+     221.0
+    ],
+    [
+     1151.6,
+     217.0
+    ]
+   ]
+  },
+  {
+   "hus": [
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123
+   ],
+   "linje": [
+    [
+     1208.2,
+     202.8
+    ],
+    [
+     1205.9,
+     315.4
+    ]
+   ]
+  },
+  {
+   "hus": [
+    128,
+    127,
+    126,
+    125,
+    124
+   ],
+   "linje": [
+    [
+     1126.9,
+     378.2
+    ],
+    [
+     1201.2,
+     368.9
+    ]
+   ]
+  },
+  {
+   "hus": [
+    146,
+    145,
+    144,
+    143,
+    142,
+    141,
+    140,
+    139
+   ],
+   "linje": [
+    [
+     1024.3,
+     359.9
+    ],
+    [
+     967.7,
+     470.3
+    ]
+   ]
+  },
+  {
+   "hus": [
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138
+   ],
+   "linje": [
+    [
+     1083.0,
+     400.1
+    ],
+    [
+     996.4,
+     534.1
+    ]
+   ]
+  }
+ ]
+}

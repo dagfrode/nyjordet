@@ -1,0 +1,69 @@
+[
+ {
+  "id": "toveis",
+  "navn": "Dagens (toveis)",
+  "beskrivelse": "Alle veier toveis. Referanse for omvei.",
+  "retning": {}
+ },
+ {
+  "id": "bakke-ned",
+  "navn": "Bakken 44–78 kun nedover",
+  "beskrivelse": "Hele bakken mellom 44 og 78 (m1 og m2) blir enveis ned mot rundkjøringen. Ingen må opp bakken.",
+  "retning": {
+   "m1": "bak",
+   "m2": "bak"
+  }
+ },
+ {
+  "id": "slyfe-g2",
+  "navn": "Sløyfe grend 2",
+  "beskrivelse": "Inn langs nedre vei (114–98), opp forbi 71–75 og ut ned bakken 44–78.",
+  "retning": {
+   "l1": "fram",
+   "v1": "bak",
+   "m2": "bak",
+   "m1": "bak"
+  }
+ },
+ {
+  "id": "opt-1",
+  "navn": "Forslag fra optimering",
+  "beskrivelse": "Fra optimeringen med vekt på trygghet: like mye kjøring på indre veier som i dag, men mindre der sikten er dårlig, langt færre møter og færre som må snu. Til gjengjeld lengre omvei for noen.",
+  "retning": {
+   "l0": "bak",
+   "d1": "bak"
+  }
+ },
+ {
+  "id": "vh",
+  "navn": "Venstre → høyre (v1 stengt)",
+  "beskrivelse": "Alle indre veier som går mest på tvers av kartet er enveis fra venstre mot høyre der det går. v1 er stengt. Blindveier og veier som går mest opp/ned er toveis.",
+  "retning": {
+   "v1": "stengt",
+   "m1": "fram",
+   "m2": "fram",
+   "l0": "fram",
+   "l1": "fram",
+   "l2": "fram",
+   "f0": "fram",
+   "f1": "fram",
+   "d1": "fram"
+  }
+ },
+ {
+  "id": "hv",
+  "navn": "Høyre → venstre (v1 stengt)",
+  "beskrivelse": "Som over, men enveis fra høyre mot venstre.",
+  "retning": {
+   "v1": "stengt",
+   "m1": "bak",
+   "m2": "bak",
+   "l0": "bak",
+   "l1": "bak",
+   "l2": "bak",
+   "f0": "bak",
+   "f1": "bak",
+   "d1": "bak"
+  }
+ }
+]

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veinettet på Nyjordet</title>
+  <meta name="description" content="Veinettet på Nyjordet som graf: ruter per hus og sammenligning av enveis-løsninger.">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="kart.css">
+</head>
+<body class="verktoy-side">
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="../../">Nyjordet – utforskninger</a>
+      <nav><a href="../">Enveiskjøring</a><a href="./" aria-current="page">Kart</a></nav>
+    </div>
+  </header>
+  <main class="wrap bred">
+    <h1>Veinettet som graf</h1>
+    <p class="lead">Målet er mindre biltrafikk på de smale indre veiene med høye hekker og dårlig sikt, så det blir tryggere for barna. Velg et scenario, klikk på et hus for å se hvilken vei det kjører inn og ut, og klikk på en vei for å endre retning.</p>
+    <p class="note"><strong>Utkast:</strong> Hvilke veier som henger sammen er hentet fra oversiktsskiltet. Veienes form og lengde kommer fra OpenStreetMap, husene står der byggene ligger i OpenStreetMap og Kartverket, og høydene er fra Kartverkets terrengmodell. Stiplede veier er usikre. Rett opp i redigeringsmodus.</p>
+
+    <div class="scenariolinje" role="group" aria-label="Scenario">
+      <label>Scenario <select id="scenario"></select></label>
+      <button id="sc-ny" title="Nytt scenario med alle veier toveis, lagret i nettleseren">+ Ny</button>
+      <button id="sc-kopi" title="Lagre en kopi av valgt scenario under nytt navn">Kopier</button>
+      <button id="sc-navn">Gi nytt navn</button>
+      <button id="sc-slett">Slett</button>
+      <button id="sc-last-ned" title="Last ned valgt scenario som JSON-fil">Last ned</button>
+      <button id="sc-last-opp" title="Hent inn scenario fra JSON-fil">Last opp</button>
+      <span id="sc-melding" class="status" role="status"></span>
+    </div>
+    <div class="verktoy">
+      <div class="knapperad" role="group" aria-label="Visning">
+        <button data-visning="ruter" class="valgt">Ruter</button>
+        <button data-visning="belastning">Belastning</button>
+      </div>
+      <label title="Hvor mye bilene foretrekker ytre vei: en meter på indre vei teller som så mange meter på ytre vei">Indre vei teller <input type="range" id="indre-faktor" min="1" max="3" step="0.1"> <output></output></label>
+      <label>Å snu koster <input type="number" id="snu-straff" min="0" step="10" style="width:5em"> m</label>
+      <label class="bryter"><input type="checkbox" id="rediger"> Rediger nett</label>
+      <button id="vis-hjelp" class="hjelp-knapp" aria-haspopup="dialog">? Hjelp</button>
+    </div>
+
+    <div class="valgt-linje" id="valgt" aria-live="polite"></div>
+    <div class="kartramme"><svg id="kart" role="img" aria-label="Kart over veinettet på Nyjordet"></svg></div>
+    <div class="forklaring" id="forklaring"></div>
+
+    <div class="paneler">
+      <section id="panel-scenario"></section>
+      <section id="panel-hus"></section>
+    </div>
+
+    <section id="panel-rediger" hidden></section>
+
+    <h2>Sammenlign scenarier</h2>
+    <div id="sammenlign-valg" class="valgliste"></div>
+    <div class="table-scroll"><table id="sammenlign-tabell"></table></div>
+    <div id="sammenlign-kart" class="smakart"></div>
+
+    <h2>Finn løsninger automatisk</h2>
+    <p>Optimeringen prøver retninger på veiene som er merket som kandidater, forkaster løsninger der et hus ikke kommer inn eller ut, og rangerer resten etter vektene under.</p>
+    <div class="opt-vekter">
+      <label>Kjøring på indre veier <input type="range" id="v-indre" min="0" max="3" step="0.1" value="3"> <output></output></label>
+      <label>Omvei <input type="range" id="v-omvei" min="0" max="3" step="0.1" value="0.5"> <output></output></label>
+      <label>Møtekonflikter <input type="range" id="v-konflikt" min="0" max="3" step="0.1" value="0.3"> <output></output></label>
+      <label>Opp bratt bakke <input type="range" id="v-bakke" min="0" max="3" step="0.1" value="0.5"> <output></output></label>
+      <label>Snuing <input type="range" id="v-snu" min="0" max="3" step="0.1" value="0.5"> <output></output></label>
+      <label class="bryter"><input type="checkbox" id="v-stengt"> Tillat å stenge veier</label>
+    </div>
+    <details class="kandidater"><summary>Kandidatveier (<span id="ant-kand"></span>)</summary><div id="kandidatliste" class="valgliste"></div></details>
+    <p><button id="kjor-opt" class="hoved">Kjør optimering</button> <span id="opt-status" class="status"></span></p>
+    <div id="opt-resultat"></div>
+
+    <h3>Enveis i én retning</h3>
+    <p>Gjør de indre veiene enveis i én retning på kartet der det går. Veier som går mest opp/ned på kartet og blindveier blir toveis. Veier du har stengt i «Eget scenario» holdes stengt. Resultatet legges i «Eget scenario».</p>
+    <p><button id="monster-hoyre">Venstre → høyre</button> <button id="monster-venstre">Høyre → venstre</button> <span id="monster-status" class="status"></span></p>
+
+    <h2>Slik regnes det</h2>
+    <ul>
+      <li><strong>Ruter</strong> måles fra rundkjøringen til hvert hus og tilbake til rundkjøringen.</li>
+      <li><strong>Ytre vei</strong> (hovedåren) går fra rundkjøringen opp til og rundt P grend 3 til innkjøringen, pluss avstikkeren til P grend 1. Den er bred og alltid toveis.</li>
+      <li><strong>Bilene foretrekker ytre vei.</strong> Når ruten velges, teller en meter på indre vei som flere meter på ytre vei (glidebryteren «Indre vei teller», standard ×1,5), og 1,5 ganger ekstra der sikten er dårlig. Slik kjører for eksempel husene øverst i grend 3 ytre vei rundt P grend 3 i stedet for gjennom grendene. Avstander i tabellene er likevel ekte meter.</li>
+      <li><strong>Kjøring på indre veier</strong> er hovedtallet for trygghet: hvor mange meter hver tur inn og ut går på de smale indre veiene, i snitt per hus. Jo lavere, jo færre biler forbi barna. Optimeringen vekter dette høyest som standard.</li>
+      <li><strong>Omvei</strong> er hvor mye lengre tur inn og ut blir, sammenlignet med at alt er toveis. Avstander er ekte veilengder i meter, fra veigeometrien i OpenStreetMap.</li>
+      <li><strong>Møtekonflikter</strong> er en indeks: for hver vei teller vi hvor mange turer som går hver vei, og tar den minste. Smale veier teller mer enn brede, og veier med dårlig sikt (hekker) teller 1,5 ganger.</li>
+      <li><strong>Opp bratt bakke</strong> er antall turer som må kjøre oppover en strekning med minst 8 % stigning over 15 m. Høydeprofilen er målt hver 5. meter langs veiene i Kartverkets terrengmodell.</li>
+      <li><strong>Snuing:</strong> De indre veiene er for smale til å møtes og vanskelige å snu på. Bilen kan snu gratis i rundkjøringer og på P-plasser, men å snu ellers (ved huset, i en blindvei eller i et kryss) koster et påslag i meter, som du kan justere. Rutene velges med dette påslaget, og «Turer der bilen må snu» teller hvor mange hus som har minst én slik snuing på turen.</li>
+      <li>Ruter finnes med Dijkstras algoritme over kjøreretninger, så vi vet hvilken vei bilen peker og om den må snu.</li>
+      <li>Alle hus teller likt. Vi vet ikke hvem som kjører mest, eller hvor varebilene skal.</li>
+    </ul>
+  </main>
+  <dialog id="hjelp" aria-labelledby="hjelp-tittel">
+    <form method="dialog" class="hjelp-lukk"><button aria-label="Lukk hjelp">×</button></form>
+    <h2 id="hjelp-tittel">Slik bruker du kartet</h2>
+    <h3>Planlegg enveiskjøring</h3>
+    <ul>
+      <li><strong>Klikk på en vei</strong> for å bytte retning: toveis → fram → bak → stengt → toveis. Endringene havner i «Eget scenario», som er valgt når siden åpnes.</li>
+      <li>Piler viser kjøreretningen, og veier du har endret, markeres med grønt. Ytre vei (den brede, mørke) er alltid toveis. w1 følger f1 automatisk.</li>
+      <li><strong>Klikk på et hus</strong> for å se ruten inn (blå) og ut (oransje) til rundkjøringen. ↺ markerer hvor bilen må snu. Klikk huset igjen, eller × i linja over kartet, for å fjerne valget.</li>
+      <li><strong>Belastning</strong> viser hvor mye trafikk hver vei får. Rød betyr biler i begge retninger, altså møter. Svart kant betyr dårlig sikt.</li>
+      <li>Velg et ferdig scenario i nedtrekkslista. Med «Rediger kopi» kan du endre videre på det.</li>
+      <li>Under kartet kan du sammenligne scenarier, la optimeringen foreslå løsninger, eller gjøre alle indre veier enveis i én retning.</li>
+      <li><strong>Egne scenarier</strong> (knappene ved nedtrekkslista):
+        <ol>
+          <li><strong>+ Ny</strong> og gi det et navn, eller <strong>Kopier</strong> et scenario du vil bygge videre på.</li>
+          <li>Klikk veier i kartet. Endringene lagres av seg selv i nettleseren.</li>
+          <li><strong>Gi nytt navn</strong> eller <strong>Slett</strong> når du vil. Beskrivelsen kan du skrive i panelet under kartet.</li>
+          <li><strong>Last ned</strong> for å dele scenariet som fil, og <strong>Last opp</strong> for å hente inn en fil du har fått.</li>
+        </ol>
+        Faste scenarier kan ikke endres. Klikker du i kartet mens et av dem er valgt, havner endringen i «Eget scenario». Det som er lagret, finnes bare i denne nettleseren, så last ned det du vil ta vare på.</li>
+      <li>«Indre vei teller» styrer hvor sterkt bilene foretrekker ytre vei. «Å snu koster» styrer hvor mye bilene unngår å snu.</li>
+    </ul>
+    <h3>Rediger selve veinettet</h3>
+    <ul>
+      <li>Slå på <strong>Rediger nett</strong>.</li>
+      <li><strong>Dra</strong> kryss (fylte sirkler), knekkpunkter (hule sirkler) og hus for å flytte dem.</li>
+      <li><strong>Klikk på en vei</strong> for å endre type, bredde, parkering, om den kan bli enveis, om den er bratt, om sikten er dårlig, og merknad. Her kan du også snu tegneretningen eller legge til et knekkpunkt.</li>
+      <li><strong>Klikk på et kryss</strong> for å endre høyde eller merke det som snuplass.</li>
+      <li><strong>Klikk på et hus</strong> og deretter «Koble huset til en annen vei» for å flytte det til en annen vei.</li>
+      <li>Endringene lagres ikke på siden. Trykk <strong>Last ned nett.json</strong> og send filen, eller legg den i repoet.</li>
+    </ul>
+    <p class="status">Du kan alltid åpne denne hjelpen igjen med «? Hjelp» over kartet.</p>
+    <form method="dialog"><button class="hoved">Skjønner</button></form>
+  </dialog>
+
+  <footer>
+    <div class="wrap"><a href="../">← Til enveiskjøring</a> · Privat side · ikke tilknyttet Nyjordet vel · Adresser og høyder © Kartverket (CC BY 4.0) · Veier og bygg © OpenStreetMap-bidragsytere (ODbL)</div>
+  </footer>
+  <script src="graf.js"></script>
+  <script src="kart.js"></script>
+</body>
+</html>
